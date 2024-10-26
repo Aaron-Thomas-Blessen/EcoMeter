@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import DataInput from "./components/DataInput";
 import Graph from "./components/Graph";
 import OverUsage from "./components/OverUsage";
-import Probability from "./components/Probability";
 
 const initialData = Array.from({ length: 30 }, (_, index) => ({
   date: `2024-10-${String(index + 1).padStart(2, "0")}`,
@@ -24,10 +23,6 @@ function App() {
       <DataInput addNewData={addNewData} />
       <Graph smartMeterData={smartMeterData} monthlyLimit={monthlyLimit} />
       <OverUsage smartMeterData={smartMeterData} monthlyLimit={monthlyLimit} />
-      <Probability
-        smartMeterData={smartMeterData}
-        monthlyLimit={monthlyLimit}
-      />
     </div>
   );
 }
