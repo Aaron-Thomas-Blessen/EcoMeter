@@ -6,8 +6,8 @@ import Probability from "./components/Probability";
 
 const initialData = Array.from({ length: 30 }, (_, index) => ({
   date: `2024-10-${String(index + 1).padStart(2, "0")}`,
-  total_load: Math.floor(Math.random() * 30) + 15, // Random load between 15-45
-  price: (Math.random() * 10 + 1).toFixed(2), // Random price
+  total_load: Math.floor(Math.random() * 11) + 15, // Random load between 15-25
+  price: (Math.random() * 5 + 1).toFixed(2), // Random price between 1.00 and 6.00
 }));
 
 function App() {
