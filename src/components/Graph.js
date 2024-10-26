@@ -1,10 +1,10 @@
-import React from 'react';
-import { LineChart, Line, XAxis, YAxis, Tooltip, Legend } from 'recharts';
+import React from "react";
+import { LineChart, Line, XAxis, YAxis, Tooltip, Legend } from "recharts";
 
 const Graph = ({ smartMeterData, monthlyLimit }) => {
   const initialSuggestedUsage = monthlyLimit / 30; // Initial daily suggested usage
 
-  const processedData = smartMeterData.reduce((acc, data, index, array) => {
+  const processedData = smartMeterData.reduce((acc, data, index) => {
     let suggestedUsage = initialSuggestedUsage;
 
     if (index > 0) {
@@ -21,7 +21,7 @@ const Graph = ({ smartMeterData, monthlyLimit }) => {
 
       // Ensure suggested usage stays within reasonable bounds
       suggestedUsage = Math.max(suggestedUsage, initialSuggestedUsage * 0.5);
-      suggestedUsage = Math.min(suggestedUsage, initialSuggestedUsage * 1.5);
+      suggestedUsage = Math.min(suggestedUsage, 20); // Cap suggested usage at 20
     }
 
     acc.push({
@@ -41,8 +41,18 @@ const Graph = ({ smartMeterData, monthlyLimit }) => {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Line type="monotone" dataKey="total_load" stroke="red" name="Actual Usage" />
-        <Line type="monotone" dataKey="suggested_usage" stroke="blue" name="Suggested Usage" />
+        <Line
+          type="monotone"
+          dataKey="total_load"
+          stroke="red"
+          name="Actual Usage"
+        />
+        <Line
+          type="monotone"
+          dataKey="suggested_usage"
+          stroke="blue"
+          name="Suggested Usage"
+        />
       </LineChart>
     </div>
   );
