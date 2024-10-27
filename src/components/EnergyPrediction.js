@@ -175,8 +175,31 @@ const EnergyPrediction = () => {
       if (avgPredictionVariance > 5) {
         messages.push('High variability in predicted usage');
       }
+
+      const weekendUsage = historical.filter(d => {
+        const date = new Date(d.date);
+        return date.getDay() === 0 || date.getDay() === 6;
+      });
+
+      const weekdayUsage = historical.filter(d => {
+        const date = new Date(d.date);
+        return date.getDay() !== 0 && date.getDay() !==6;
+      });
+
+      const avgWeekend = weekendUsage.reduce((acc, val) => acc + val.actual, 0) / weekendUsage.length;
+      const avgWeekday = weekdayUsage.reduce((acc, val) => acc + val.actual, 0) / weekdayUsage.length;
+
+      if (avgWeekend > avgWeekday*1.2) {
+            messages.push('Weekend usage is significantly higher than weekdays');
+      }
+
+      const hour = new Date().getHours();
+      if(hour >=9 && hour <= 17) {
+        messages.push('Consider optimizing energy usage during peak hours');
+    }
+
       
-      return messages.join('. ') + '. Consider reviewing energy consumption patterns.';
+      return messages.join('. ') + (messages.length?'.':'')+ 'Consider reviewing energy consumption patterns.';
     };
     
     setInsightMessage(generateInsights());
