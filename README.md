@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+# **Ecometer - Smart Energy Monitoring Tool**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Demo Video](https://youtu.be/KL5TGdBMioo)
 
-## Available Scripts
+Welcome to Ecometer! Our innovative tool enables users to monitor and optimize their energy consumption in real time, promoting efficiency and sustainability. Whether you’re a homeowner or a business, Ecometer helps you take control of your energy usage.
 
-In the project directory, you can run:
+## **🌟 Introduction**
 
-### `npm start`
+This README provides an overview of the features, usage instructions, and contact information for Ecometer. Read on to learn how you can effortlessly track and manage your energy consumption with our intuitive platform.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **🚀 Features**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ecometer offers a variety of functionalities to enhance energy management:
 
-### `npm test`
+1. **Real-Time Monitoring:** View your energy usage live, providing immediate awareness of consumption patterns.
+   
+2. **Predictive Analytics:** Our AI model forecasts future usage and costs based on historical data, allowing proactive adjustments.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Alerts and Notifications:** Receive instant alerts when your energy consumption exceeds set limits to help prevent unexpected bills.
 
-### `npm run build`
+4. **Personalized Tips:** Get AI-generated recommendations tailored to your usage patterns, encouraging efficient habits.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. **User-Friendly Dashboard:** Navigate an intuitive interface built with React for seamless interactions.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. **Data Visualization:** Analyze daily, weekly, and monthly energy usage through visually appealing graphs and charts.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+7. **Profile Management:** Create and manage user profiles to track individual energy habits.
 
-### `npm run eject`
+## **🛠️ Technologies Used**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Frontend:** React, JavaScript
+- **Backend:** Python, WebSockets, AI Models
+- **Database:** Firebase
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **📚 Application**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ecometer is designed for:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Homeowners:** Helping families manage energy use to reduce costs and environmental impact.
 
-## Learn More
+2. **Businesses:** Assisting companies in monitoring energy consumption, enhancing efficiency, and lowering operational costs.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Educational Purposes:** Providing a practical tool for students and professionals to understand energy management concepts.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Sustainability Efforts:** Enabling users to contribute to a greener future through responsible energy consumption.
 
-### Code Splitting
+## **🛠️ Getting Started**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To start using Ecometer, follow these steps:
 
-### Analyzing the Bundle Size
+1. **Explore Dashboard:** Navigate to the dashboard to view real-time energy data and analytics.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Set Alerts:** Configure your energy consumption limits to receive notifications.
 
-### Making a Progressive Web App
+3. **Review Tips:** Check out personalized tips to enhance your energy efficiency.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## **💻 How to Set Up Locally**
 
-### Advanced Configuration
+### **Requirements**
+- **Node.js and npm**
+- **Python**
+- **Firebase**
+- **WebSocket Library**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### **Installation Steps**
 
-### Deployment
+1. **Clone the Repo:**
+   ```bash
+   git clone https://github.com/Aaron-Thomas-Blessen/Ecometer.git
+   cd Ecometer
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. **Install Frontend Dependencies:**
+   Navigate to the `frontend` folder and install:
+   ```bash
+   cd frontend
+   npm install
+   ```
 
-### `npm run build` fails to minify
+3. **Set Up the Backend:**
+   Navigate to the `backend` folder and install any necessary packages.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. **Run Locally:**
+   Start the backend server:
+   ```bash
+   python app.py
+   ```
+   Then start the frontend development server:
+   ```bash
+   cd frontend
+   npm start
+   ```
+
+5. **Open in Browser:**
+   Access the application by navigating to [http://localhost:3000](http://localhost:3000).
+
+## **📋 Usage**
+
+To monitor and manage your energy consumption:
+
+1. **Log In:** Access your account.
+   
+2. **View Dashboard:** Check real-time energy usage and analytics.
+
+3. **Set Alerts:** Customize your consumption limits.
+
+4. **Receive Notifications:** Stay informed with alerts for high usage.
+
+5. **Explore Tips:** Read personalized suggestions to reduce energy consumption.
+
+## **🛠️ Developers**
+
+This project was developed by:
+- **[Aaron Thomas Blessen](https://www.linkedin.com/in/aaron-thomas-blessen-390200214/)**
+- **[Ethen Biju](Collaborator LinkedIn Profile)**
+- **[Fabio Joby Varghese](Collaborator LinkedIn Profile)**
+  
+## **💬 Feedback**
+
+We’re committed to enhancing Ecometer. If you have feedback, suggestions, or encounter any issues, please contact us. Your input is vital for improving our platform.
+
+## **📧 Contact Us**
+
+For questions or inquiries regarding Ecometer, reach out to us at [aaronthomas232200@gmail.com](mailto:aaronthomas232200@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/aaron-thomas-blessen-390200214/) or [Twitter](https://twitter.com/aaron_blessen).
+
+Thank you for choosing Ecometer! We hope you enjoy managing your energy consumption effectively.
+
+**Happy Monitoring!**
